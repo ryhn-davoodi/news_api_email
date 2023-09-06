@@ -14,8 +14,11 @@ def send_email(cont):
 
 
 api="24bc313188794f928cf0d6e7ef838c38"
-url=("https://newsapi.org/v2/everything?q=tesla&from=2023-08-03&sort"
-     "By=publishedAt&apiKey=24bc313188794f928cf0d6e7ef838c38&language=en")
+url=("https://newsapi.org/v2/everything?q=tesla"
+     "&from=2023-08-06"
+     "&sortBy=publishedAt"
+     f"&apiKey={api}&language=en")
+
 # Make a Requests
 request=requests.get(url)
 # get a dictionary with data
